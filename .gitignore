@@ -1,0 +1,38 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files (CRITICAL)
+.env
+.env.*
+!.env.example   # allowed
+*.local
+
+# Editor
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs/
+*.log
+
+# OS Junk
+Thumbs.db
+
+# Build / Output artifacts
+*.cache
+.cache/
+.vercel/
+.netlify/

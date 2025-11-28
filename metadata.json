@@ -1,0 +1,7 @@
+{
+  "name": "TempAI",
+  "description": "A cross-platform, AI-powered weather application featuring real-time forecasts, outfit suggestions, and multilingual support (English, French, Arabic).",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

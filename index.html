@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TempAI - Weather App</title>
+
+    <!-- Favicons & App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/logo192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/logo512.png" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Tailwind (dev-only, OK for local) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              arabic: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              primary: '#3b82f6',
+              secondary: '#64748b',
+              accent: '#8b5cf6',
+              dark: '#0f172a',
+              card: '#1e293b',
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom Scrollbar & RTL helper -->
+    <style>
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+      .rtl { direction: rtl; font-family: 'Cairo', sans-serif; }
+    </style>
+
+    <!-- Your local stylesheet -->
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900 dark:bg-dark dark:text-gray-100 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
