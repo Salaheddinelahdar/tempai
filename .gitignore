@@ -9,9 +9,14 @@ lerna-debug.log*
 
 # Environment files (CRITICAL)
 .env
-.env.*
-!.env.example   # allowed
-*.local
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.*.local
+
+# Allow example file
+!.env.example
 
 # Editor
 .vscode/
@@ -28,10 +33,10 @@ lerna-debug.log*
 logs/
 *.log
 
-# OS Junk
+# OS
 Thumbs.db
 
-# Build / Output artifacts
+# Build / Output
 *.cache
 .cache/
 .vercel/
